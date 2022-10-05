@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <!-- Google Fonts -->
+    <embed name="memory" src="music.mp3" loop="true" hidden="true" autostart="true">
+      <!-- <audio src="music.mp3" controls hidden="true" autostart="true" loop="true">	
+        <embed 
+          src="music.mp3"
+          hidden="true"
+          loop="true"
+          autostart="true">
+      </audio> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="head">
+  <h1 class="heading">MEMORY GAME</h1>
+</header>
+
+    <div class="wrapper">
+     
+        <div class="stats-container">
+            <div id="moves-count"></div>
+            <div id="time"></div>
+        </div>
+        <section class="sec">
+        <div class="game-container"></div>
+      </section>
+      <div class="stop">
+      <button class="reset" id="stop" >RESET</button></div>
+    </div>
+      <div class="controls-container">  
+        <div class="logoo">
+        <button class="butto"id="start">START GAME</button></div>
+       <div class="result"> <p class="para"id="result"></p>
+        <p id="move"></p>
+        </div>
+      </div>
+
+
+
+
+
+
+    <script src="j.js"></script>
+</body>
+</html>

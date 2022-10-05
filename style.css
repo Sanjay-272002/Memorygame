@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background: url("https://wallpaperaccess.com/full/1088620.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: 100% 100%;
+
+
+   
+}
+section{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: -230vh;
+    margin-top: 10px;
+}
+.wrapper.active section{
+    display: flex;
+}
+/* .wrapper{
+    
+    display: block;
+    background-color: #ffff;
+    box-sizing: border-box;
+    width: 38%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0.7em;
+    box-shadow: 0 0.9em 2.8em rgba(86,66,0,0.2);
+} */
+.game-container{
+    
+    display:grid;
+    grid-template-columns: repeat(4, 8rem);
+    grid-template-rows: repeat(4,8rem);
+    grid-gap:1rem;
+    perspective: 800px;
+
+}
+.card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: rgba(7, 7, 7, 0.2) 0px 10px 15px;
+    
+}
+.face,.back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+}
+.back{
+    backface-visibility: hidden;
+}
+.toggle{
+    transform: rotateY(180deg);
+}
+
+.head{
+    margin-top: 30px;
+    font-size: large;
+    color: #bc1816;
+    width: 20%;
+    background-color: beige;
+    border-radius: 8px;
+    margin-left: 600px;
+} 
+.heading{
+    text-align: center;
+} 
+
+.logoo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    margin-left: -50px;
+}
+.logoo.active{
+    display: none;
+    
+}
+.butto{
+    padding: 1rem 3rem;
+    font-size: 22px;
+    font-weight: 1000;
+    color: #bc1816;
+    border-radius:8px;
+    width:16%;
+    margin-left: 20px;
+    margin-bottom: -300px;
+   
+}
+/* .ball{
+    opacity: 0;
+    width: 15%;
+} */
+.stats-container{
+    background-color:beige ;
+    margin-top: -50px;
+    margin-left: 10px;
+    width: 8%;
+    font-size: large;
+    color: #bc1816;
+    font-weight: 800;
+    border-radius: 8px;
+    text-align: center;
+}
+ .stop{
+    display: none;
+    margin-left: 1400px;
+    margin-top: -620px;
+}
+.wrapper.active .stop{
+    display: block;
+}
+.reset{
+    background-color: aliceblue;
+    color: #bc1816;
+    width: 60%;
+    font-size: large;
+    font-weight: 800;
+    padding: 8px 8px;
+    border-radius: 8px;
+}
+ .result{
+    display: none;
+    color: #bc1816;
+    background-color: aliceblue;
+    width: 100%;
+    padding: 80px 90px;
+    font-size: large;
+    font-weight: 800;
+    margin-top: 50px;
+    /* margin-left: 400px;  */
+    /* margin-bottom: 50px; */
+    text-align: center;
+    border-radius: 28px;
+}
+.result.active{
+    display: block;
+}
+.para{
+     text-align: center;
+     margin-top: -70px;
+}
+@media only screen and  (max-width:730px){
+    .head{
+        margin-left: 70px;
+        width: 60%;
+        font-weight: normal;
+        font-size: small;  
+    }
+    .butto{
+        width: 50%;
+        font-size: 16px;
+        margin-left: 40px;
+    }
+    .stats-container{
+        font-size: 13px;
+        width: 17%;
+        
+        margin-left: 0px;
+    }
+    .result{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .para{
+        text-align: center;
+    }
+    
+}
