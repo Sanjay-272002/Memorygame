@@ -168,7 +168,7 @@ const movesgenerate = ()=>{
 }
 
 startButton.addEventListener("click",()=>{
-  seconds = 5;
+  seconds = 30;
   wrap.classList.add("active");
   logg.classList.add("active");
   res.classList.remove("active");
