@@ -145,6 +145,7 @@ const timeGenerator = ()=>{
         timeValue.innerHTML=30;
         result.innerHTML="You won";
         startButton.innerHTML="Play Again"
+        restart();
      }   
     else if((seconds==0)&&(movesCount!=(cardData.length/2)))
       {  wrap.classList.remove("active");
@@ -155,6 +156,8 @@ const timeGenerator = ()=>{
         result.innerHTML="You lost";
         movee.innerHTML="Moves:"+movesCount;
         startButton.innerHTML="Play Again";
+        restart();
+
     }
 let secondsValue = seconds<10? "0"+seconds:seconds;
 // let minutesValue=minutes<10?"0"+minutes:minutes;
